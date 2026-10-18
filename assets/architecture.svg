@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" fill="none">
+  <defs>
+    <linearGradient id="top" x1="250" y1="180" x2="650" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#465365"/>
+      <stop offset=".4" stop-color="#1B2739"/>
+      <stop offset="1" stop-color="#101B2B"/>
+    </linearGradient>
+    <linearGradient id="left" x1="200" y1="350" x2="480" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B293B"/>
+      <stop offset="1" stop-color="#080E19"/>
+    </linearGradient>
+    <linearGradient id="right" x1="650" y1="280" x2="500" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#223B61"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="360" y1="200" x2="580" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B4CCE9" stop-opacity=".16"/>
+      <stop offset=".4" stop-color="#4277B8" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#6798D4" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="280" y1="210" x2="610" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C1D3EA" stop-opacity=".6"/>
+      <stop offset=".5" stop-color="#597698" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#8AB9FF" stop-opacity=".45"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#1758C2" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#1758C2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="300" y1="300" x2="680" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB" stop-opacity=".2"/>
+      <stop offset=".5" stop-color="#79B7FF"/>
+      <stop offset="1" stop-color="#2563EB" stop-opacity=".15"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <style>
+      .suspended { animation: suspension 14s ease-in-out infinite; }
+      .trace { stroke-dasharray: 28 310; animation: transmission 16s linear infinite; }
+      .particle { animation: luminance 7s ease-in-out infinite; }
+      .delayed { animation-delay: -3s; }
+      @keyframes suspension { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+      @keyframes transmission { to { stroke-dashoffset: -676; } }
+      @keyframes luminance { 0%, 100% { opacity: .25; } 50% { opacity: .9; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <ellipse cx="480" cy="470" rx="380" ry="350" fill="url(#halo)"/>
+  <g stroke="#325078" stroke-width=".7" opacity=".24">
+    <path d="m55 510 430-248 430 248M20 566l465-268 465 268M-15 622l500-288 500 288M-50 678l535-308 535 308M-85 734l570-328 570 328"/>
+    <path d="m75 522 410 237 410-237M130 490l355 205 355-205M185 458l300 173 300-173M240 426l245 141 245-141M295 394l190 109 190-109"/>
+    <path d="M485 262v497"/>
+  </g>
+  <g stroke="#4975A8" stroke-width=".7" opacity=".24">
+    <path d="m178 323 307-177 307 177v355L485 855 178 678Z"/>
+    <path d="m178 323 307 177 307-177M485 500v355"/>
+    <path d="M485 146v77M178 323l67 39M792 323l-67 39"/>
+  </g>
+  <path d="m246 681 239-138 239 138-239 138Z" fill="#02050A" opacity=".8" filter="url(#shadow)"/>
+
+  <g stroke="url(#edge)" stroke-width=".8">
+    <path d="m227 544 258-149 258 149-258 149Z" fill="url(#top)"/>
+    <path d="m227 544 258 149v45L227 589Z" fill="url(#left)"/>
+    <path d="m485 693 258-149v45L485 738Z" fill="url(#right)"/>
+  </g>
+  <g stroke="#4773A8" stroke-width=".7" opacity=".32">
+    <path d="m252 544 233-134 233 134-233 134Z"/>
+    <path d="m279 544 206-119 206 119-206 119Z"/>
+    <path d="m227 566 258 149 258-149"/>
+  </g>
+  <path d="m238 550 247 143 247-143" stroke="#397AF6" stroke-width="2" opacity=".65" filter="url(#glow)"/>
+  <path d="m238 550 247 143 247-143" stroke="url(#beam)" stroke-width="1.2"/>
+
+  <g stroke="#4C73A4" stroke-width="1" opacity=".35">
+    <path d="M302 499V374m366 125V374M485 605V480M393 552V427m184 125V427"/>
+    <path d="m302 425 183 106 183-106M348 399v126m274-126v126"/>
+  </g>
+
+  <g class="suspended">
+    <g stroke="url(#edge)" stroke-width=".8">
+      <path d="m274 371 211-122 211 122-211 122Z" fill="url(#top)"/>
+      <path d="m274 371 211 122v39L274 410Z" fill="url(#left)"/>
+      <path d="m485 493 211-122v39L485 532Z" fill="url(#right)"/>
+    </g>
+    <path d="m292 371 193-111 193 111-193 111Z" stroke="#728AA7" stroke-opacity=".45"/>
+    <path d="m316 371 169-97 169 97-169 97Z" stroke="#416DA5" stroke-opacity=".6"/>
+    <g stroke="#8EA6C4" stroke-width=".7" opacity=".35">
+      <path d="m348 352 169 97m-137-116 169 97m-137-116 169 97m-137-116 169 97"/>
+      <path d="m348 390 169-97m-137 116 169-97m-137 116 169-97m-137 116 169-97"/>
+    </g>
+    <path d="m285 393 200 115 200-115" stroke="#3579F6" stroke-width="2" filter="url(#glow)"/>
+    <path d="m285 393 200 115 200-115" stroke="url(#beam)" stroke-width="1.4"/>
+
+    <g stroke="url(#edge)" stroke-width=".8">
+      <path d="m382 256 103-60 103 60-103 60Z" fill="url(#top)"/>
+      <path d="m382 256 103 60v116l-103-60Z" fill="url(#left)"/>
+      <path d="m485 316 103-60v116l-103 60Z" fill="url(#right)"/>
+      <path d="m397 256 88-51 88 51-88 51Z" fill="url(#glass)"/>
+    </g>
+    <g stroke="#6687B4" stroke-width=".7" opacity=".4">
+      <path d="m397 278 73 42v89m-49-117v88m24-74v88"/>
+      <path d="m500 320 73-42v86m-49-57v85m25-99v84"/>
+      <path d="m382 285 103 60 103-60m-206 29 103 60 103-60"/>
+    </g>
+    <path d="m397 256 88 51 88-51" stroke="#99C6FF" stroke-opacity=".8"/>
+    <path d="M485 316v116" stroke="#5797F4" stroke-opacity=".7"/>
+    <path d="m446 256 39-23 39 23-39 23Z" fill="#397AF6" fill-opacity=".35" stroke="#8AB9FF" stroke-opacity=".8"/>
+
+    <g stroke="#7B9BC2" stroke-width=".8">
+      <path d="m344 231 141-81 141 81v163l-141 81-141-81Z" fill="url(#glass)" fill-opacity=".35"/>
+      <path d="m344 231 141 81 141-81M485 312v163" opacity=".6"/>
+      <path d="M344 231v24m0 115v24l21 12m239 0 22-12v-24m0-115v-24l-21-12M464 162l21-12 21 12" stroke="#B6D2F5" stroke-opacity=".75"/>
+    </g>
+  </g>
+
+  <g stroke="url(#edge)" stroke-width=".7">
+    <path d="m172 438 63-36 63 36-63 37Z" fill="url(#top)"/>
+    <path d="m172 438 63 37v37l-63-37Z" fill="url(#left)"/>
+    <path d="m235 475 63-37v37l-63 37Z" fill="url(#right)"/>
+    <path d="m673 446 63-36 63 36-63 37Z" fill="url(#top)"/>
+    <path d="m673 446 63 37v37l-63-37Z" fill="url(#left)"/>
+    <path d="m736 483 63-37v37l-63 37Z" fill="url(#right)"/>
+    <path d="m417 650 68-39 68 39-68 40Z" fill="url(#top)"/>
+    <path d="m417 650 68 40v27l-68-40Z" fill="url(#left)"/>
+    <path d="m485 690 68-40v27l-68 40Z" fill="url(#right)"/>
+  </g>
+  <g stroke="#548BD5" stroke-width="1" opacity=".7">
+    <path d="m235 438 67-39m366 0 68 47M485 532v118"/>
+    <path d="m191 438 44 26 44-26m413 8 44 26 44-26m-344 204 49 29 49-29"/>
+  </g>
+  <g stroke="#8CC7FF" stroke-width="2" filter="url(#glow)" opacity=".8">
+    <path class="trace" d="m235 438 67-39 183 106 183-106 68 47"/>
+    <path class="trace" d="M485 532v118l49 29"/>
+  </g>
+  <g stroke="#89BDFF" stroke-width=".8" opacity=".4">
+    <path d="m235 512-70 40v64l-68 39M736 520l65 38v53l67 39M485 717v71"/>
+  </g>
+  <g fill="#A2CDFF">
+    <circle class="particle" cx="235" cy="438" r="2"/>
+    <circle class="particle delayed" cx="736" cy="446" r="2"/>
+    <circle class="particle" cx="485" cy="650" r="2"/>
+    <circle class="particle delayed" cx="320" cy="219" r="1.4"/>
+    <circle class="particle" cx="669" cy="281" r="1.4"/>
+    <circle class="particle delayed" cx="165" cy="616" r="1.4"/>
+    <circle class="particle" cx="801" cy="611" r="1.4"/>
+    <circle class="particle delayed" cx="485" cy="116" r="1.4"/>
+  </g>
+  <g stroke="#7E9BBF" stroke-width=".7" opacity=".6">
+    <path d="M136 360h12m-6-6v12M736 232h12m-6-6v12M629 698h12m-6-6v12M345 723h8m-4-4v8"/>
+  </g>
+</svg>

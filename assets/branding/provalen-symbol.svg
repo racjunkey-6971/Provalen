@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 80" fill="none">
+  <defs>
+    <linearGradient id="titanium" x1="18" y1="6" x2="64" y2="74" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2F5FA"/>
+      <stop offset=".45" stop-color="#BAC7D9"/>
+      <stop offset="1" stop-color="#71829B"/>
+    </linearGradient>
+    <linearGradient id="sapphire" x1="6" y1="28" x2="40" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#78B5FF"/>
+      <stop offset=".5" stop-color="#3579F6"/>
+      <stop offset="1" stop-color="#19408D"/>
+    </linearGradient>
+  </defs>
+  <path d="M17 7h35c12 0 18 12 12 23L40 73H27l26-47c2-4 0-8-4-8H23Z" fill="url(#titanium)"/>
+  <path d="M4 29h13l14 25 14-25h13L31 77Z" fill="url(#sapphire)"/>
+  <path d="M17 7h35c7 0 12 4 14 10M4 29h13l14 25" stroke="#ECF5FF" stroke-opacity=".35" stroke-width=".7"/>
+</svg>
